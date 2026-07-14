@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+      .nav-link.active {
+        color: #1B5E20;
+        font-weight: bold;
+        border-bottom: 2px solid #F9A825;
+        padding-bottom: 4px;
+  }
+  </style>
+</head>
+<body>
+  <!-- ================= HEADER ================= -->
+<header class="fixed top-0 left-0 w-full z-50">
+  <!-- TOP BAR -->
+  <div class="bg-[#1B5E20] text-white text-sm">
+    <div class="max-w-7xl mx-auto px-6 py-2 flex justify-between items-center">
+      <!-- Contact -->
+      <div class="flex items-center gap-6">
+        <span class="flex items-center">
+          <i class="fa-solid fa-phone text-yellow-300 mr-2"></i>
+          +91 9437297366
+        </span>
+
+        <span class="hidden md:flex items-center">
+          <i class="fa-solid fa-envelope text-yellow-300 mr-2"></i>
+          school@gmail.com
+        </span>
+      </div>
+
+      <!-- Social -->
+      <div class="flex gap-4 text-lg">
+        <a href="#" class="hover:text-yellow-300 transition">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="#" class="hover:text-yellow-300 transition">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="#" class="hover:text-yellow-300 transition">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN HEADER -->
+  <div class="bg-white shadow-lg">
+    <div class="max-w-7xl mx-auto px-2">
+      <div class="flex justify-between items-center py-4">
+        <!-- LOGO -->
+        <a href="index.html" class="flex items-center gap-4">
+          <img src="images/log.png" class="h-24 w-24 object-contain" />
+
+          <div>
+            <h1 class="text-3xl font-extrabold text-[#1B5E20] uppercase">
+              Green woods <br>Creative School
+            </h1>
+
+            <p class="text-[#F9A825] font-semibold tracking-widest">
+              Jajpur
+            </p>
+          </div>
+        </a>
+
+        <!-- DESKTOP NAVIGATION -->
+        <nav class="hidden lg:flex items-center gap-4">
+          <a
+            href="index.html"
+            class="nav-link relative font-semibold hover:text-[#1B5E20] transition after:absolute after:left-0 after:-bottom-2 after:h-[2px] after:w-0 after:bg-[#F9A825] after:transition-all hover:after:w-full"
+          >
+            Home
+          </a>
+
+          <a
+            href="about.html"
+            class="nav-link relative font-semibold hover:text-[#1B5E20] transition after:absolute after:left-0 after:-bottom-2 after:h-[2px] after:w-0 after:bg-[#F9A825] after:transition-all hover:after:w-full"
+          >
+            About
+          </a>
+
+          <a
+            href="academic.html"
+            class="nav-link relative font-semibold hover:text-[#1B5E20] transition after:absolute after:left-0 after:-bottom-2 after:h-[2px] after:w-0 after:bg-[#F9A825] after:transition-all hover:after:w-full"
+          >
+            Academics
+          </a>
+
+          <a
+            href="admission.html"
+            class="nav-link relative font-semibold hover:text-[#1B5E20] transition after:absolute after:left-0 after:-bottom-2 after:h-[2px] after:w-0 after:bg-[#F9A825] after:transition-all hover:after:w-full"
+          >
+            Admission
+          </a>
+
+          <a
+            href="facility.html"
+            class="nav-link relative font-semibold hover:text-[#1B5E20] transition after:absolute after:left-0 after:-bottom-2 after:h-[2px] after:w-0 after:bg-[#F9A825] after:transition-all hover:after:w-full"
+          >
+            Facilities
+          </a>
+
+          <a
+            href="mandatory-disclosure.html"
+            class="nav-link relative font-semibold hover:text-[#1B5E20] transition after:absolute after:left-0 after:-bottom-2 after:h-[2px] after:w-0 after:bg-[#F9A825] after:transition-all hover:after:w-full"
+          >
+            Mandatory Disclosure
+          </a>
+
+          <a
+            href="gallery.html"
+            class="nav-link relative font-semibold hover:text-[#1B5E20] transition after:absolute after:left-0 after:-bottom-2 after:h-[2px] after:w-0 after:bg-[#F9A825] after:transition-all hover:after:w-full"
+          >
+            Gallery
+          </a>
+
+          <a
+            href="contact.html"
+            class="nav-link relative font-semibold hover:text-[#1B5E20] transition after:absolute after:left-0 after:-bottom-2 after:h-[2px] after:w-0 after:bg-[#F9A825] after:transition-all hover:after:w-full"
+          >
+            Contact
+          </a>
+        </nav>
+
+        <!-- APPLY BUTTON -->
+        <div class="hidden lg:block">
+          <a
+            href="admission.html"
+            class="bg-gradient-to-r from-[#1B5E20] to-[#F9A825] text-white px-6 py-3 rounded-full shadow-lg hover:scale-105 transition"
+          >
+            Apply Now
+          </a>
+        </div>
+
+        <!-- MOBILE BUTTON -->
+        <button
+          onclick="openMenu()"
+          class="lg:hidden bg-[#1B5E20] text-white w-12 h-12 rounded-full shadow-lg"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+
+<div
+  id="mobileMenu"
+  class="fixed top-0 left-0 w-72 h-full bg-white shadow-2xl transform -translate-x-full transition duration-300 z-50"
+>
+  <div
+    class="bg-gradient-to-r from-[#1B5E20] to-[#F9A825] p-6 flex justify-between items-center"
+  >
+    <h2 class="text-white text-2xl font-bold">Menu</h2>
+
+    <button onclick="closeMenu()" class="text-white text-3xl">×</button>
+  </div>
+
+  <nav class="flex flex-col p-6 gap-6 font-semibold">
+    <a href="index.html">Home</a>
+
+    <a href="about.html">About</a>
+
+    <a href="academic.html">Academics</a>
+
+    <a href="admission.html">Admission</a>
+
+    <a href="facility.html">Facilities</a>
+
+    <a href="mandatory-disclosure.html"> Mandatory Disclosure </a>
+
+    <a href="gallery.html">Gallery</a>
+
+    <a href="contact.html">Contact</a>
+
+    <a
+      href="admission.html"
+      class="mt-5 bg-gradient-to-r from-[#1B5E20] to-[#F9A825] text-white py-3 rounded-xl text-center"
+    >
+      Apply Now
+    </a>
+  </nav>
+</div>
+
+<!-- Overlay -->
+
+<div
+  id="overlay"
+  class="fixed inset-0 bg-black/50 hidden z-40"
+  onclick="closeMenu()"
+></div>
+
+<script>
+  function openMenu() {
+    document.getElementById("mobileMenu").classList.remove("-translate-x-full");
+
+    document.getElementById("overlay").classList.remove("hidden");
+  }
+
+  function closeMenu() {
+    document.getElementById("mobileMenu").classList.add("-translate-x-full");
+
+    document.getElementById("overlay").classList.add("hidden");
+  }
+</script>
+
+<!-- Add this after the header so page content doesn't hide behind it -->
+<div class="h-44 lg:h-40"></div>
+
+</body>
+</html>

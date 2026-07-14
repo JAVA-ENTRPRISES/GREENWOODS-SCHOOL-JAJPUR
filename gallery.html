@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Gallery | Greenwood Public School</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <style>
+      .gallery img {
+        cursor: pointer;
+        transition: 0.5s;
+      }
+
+      .gallery img:hover {
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-50">
+    <div id="header"></div>
+
+    <!-- HERO -->
+
+    <section class="relative h-screen overflow-hidden">
+      <img
+        src="images/gallery.avif"
+        class="absolute inset-0 w-full h-full object-cover"
+      />
+
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/70"
+      ></div>
+
+      <div class="relative max-w-7xl mx-auto h-full flex items-center px-6">
+        <div class="text-white">
+          <span class="bg-red-600 px-6 py-2 rounded-full">
+            School Gallery
+          </span>
+
+          <h1 class="text-7xl font-black mt-8 leading-tight">
+            Capturing <br />
+            Every Beautiful <br />
+            Moment
+          </h1>
+
+          <p class="max-w-xl mt-8 text-xl text-gray-200">
+            Every picture tells the story of learning, friendship, creativity
+            and success.
+          </p>
+
+          <a
+            href="#gallery"
+            class="inline-block mt-10 bg-red-600 hover:bg-red-700 px-8 py-4 rounded-xl font-semibold"
+          >
+            Explore Gallery
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FLOATING STATS -->
+
+    <section class="-mt-20 relative z-20">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div class="bg-white rounded-3xl shadow-xl p-8 text-center">
+            <h2 class="text-5xl font-bold text-red-600">800+</h2>
+
+            <p class="mt-3 text-gray-600">Gallery Images</p>
+          </div>
+
+          <div class="bg-white rounded-3xl shadow-xl p-8 text-center">
+            <h2 class="text-5xl font-bold text-red-600">100+</h2>
+
+            <p class="mt-3 text-gray-600">School Events</p>
+          </div>
+
+          <div class="bg-white rounded-3xl shadow-xl p-8 text-center">
+            <h2 class="text-5xl font-bold text-red-600">35+</h2>
+
+            <p class="mt-3 text-gray-600">Competitions</p>
+          </div>
+
+          <div class="bg-white rounded-3xl shadow-xl p-8 text-center">
+            <h2 class="text-5xl font-bold text-red-600">100%</h2>
+
+            <p class="mt-3 text-gray-600">Happy Memories</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MASONRY GALLERY -->
+
+    <section id="gallery" class="py-28">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center">
+          <span class="text-red-600 font-semibold uppercase">
+            Campus Life
+          </span>
+
+          <h2 class="text-5xl font-bold mt-4">Moments We Cherish</h2>
+
+          <p class="text-gray-600 mt-6">
+            Explore beautiful memories from our campus.
+          </p>
+        </div>
+
+        <div
+          class="gallery columns-1 md:columns-2 lg:columns-3 gap-6 mt-16 space-y-6"
+        >
+          <img src="images/school.jpg" class="rounded-3xl shadow-xl" />
+
+          <img src="images/students.jpg" class="rounded-3xl shadow-xl" />
+
+          <img src="images/classroom.jpg" class="rounded-3xl shadow-xl" />
+
+          <img src="images/campus.jpg" class="rounded-3xl shadow-xl" />
+
+          <img src="images/science.jpg" class="rounded-3xl shadow-xl" />
+
+          <img src="images/library.avif" class="rounded-3xl shadow-xl" />
+
+          <img src="images/sports2.jpg" class="rounded-3xl shadow-xl" />
+
+          <img src="images/annual.jpg" class="rounded-3xl shadow-xl" />
+
+          <img src="images/teacher.jpg" class="rounded-3xl shadow-xl" />
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTS SECTION -->
+
+    <section class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex justify-between items-center mb-12">
+          <div>
+            <span class="text-red-600 uppercase font-semibold">
+              School Events
+            </span>
+
+            <h2 class="text-5xl font-bold mt-3">Celebrations</h2>
+          </div>
+
+          <a
+            href="#"
+            class="border px-6 py-3 rounded-xl hover:bg-red-600 hover:text-white transition"
+          >
+            View All
+          </a>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="group relative overflow-hidden rounded-[35px]">
+            <img
+              src="images/annual.jpg"
+              class="h-[420px] w-full object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"
+            ></div>
+
+            <div class="absolute bottom-8 left-8 text-white">
+              <h3 class="text-3xl font-bold">Annual Function</h3>
+
+              <p class="mt-3">A celebration of talent and achievements.</p>
+            </div>
+          </div>
+
+          <div class="group relative overflow-hidden rounded-[35px]">
+            <img
+              src="images/science.jpg"
+              class="h-[420px] w-full object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"
+            ></div>
+
+            <div class="absolute bottom-8 left-8 text-white">
+              <h3 class="text-3xl font-bold">Science Exhibition</h3>
+
+              <p class="mt-3">Innovation and creativity.</p>
+            </div>
+          </div>
+
+          <div class="group relative overflow-hidden rounded-[35px]">
+            <img
+              src="images/teacher.jpg"
+              class="h-[420px] w-full object-cover group-hover:scale-110 transition duration-700"
+            />
+
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"
+            ></div>
+
+            <div class="absolute bottom-8 left-8 text-white">
+              <h3 class="text-3xl font-bold">Teacher's Day</h3>
+
+              <p class="mt-3">Celebrating our mentors.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="footer"></div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
